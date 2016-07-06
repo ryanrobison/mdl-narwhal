@@ -1,8 +1,8 @@
 <!doctype html>
-<html>
+<html class="narwhal course-page">
 <head>
   <meta charset="utf-8">
-  <title>MdlNarwhal</title>
+  <title>Narwhal</title>
   <base href="/">
 
   {{#unless environment.production}}
@@ -10,11 +10,13 @@
   {{/unless}}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://use.fontawesome.com/aed5d63ff8.js"></script>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="public/css/styles.css">
 </head>
 <body>
   <app-root>Loading...</app-root>
-
-  
 
     {{#each scripts.polyfills}}
     <script src="{{.}}"></script>
@@ -24,8 +26,6 @@
         System.import('main');
       }).catch(console.error.bind(console));
     </script>
-
-  
 
 </body>
 </html>
